@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wiki Mini</title>
+  <title>Wiki - Galaxy S3</title>
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -23,14 +23,14 @@
 </head>
 <body>
   <div class="container-fluid">
-    <h1 class="text-center mb-4">📚 Wiki Mini</h1>
+    <h1 class="text-center mb-4">📱 Wiki Galaxy S3</h1>
     <div class="row">
       <!-- Sidebar -->
       <div class="col-md-3">
         <div class="list-group" id="sidebar">
-          <button class="list-group-item list-group-item-action" onclick="loadArticle('intro')">Giới thiệu</button>
-          <button class="list-group-item list-group-item-action" onclick="loadArticle('html')">HTML là gì?</button>
-          <button class="list-group-item list-group-item-action" onclick="loadArticle('js')">JavaScript cơ bản</button>
+          <button class="list-group-item list-group-item-action" onclick="loadArticle('overview')">Tổng quan</button>
+          <button class="list-group-item list-group-item-action" onclick="loadArticle('specs')">Thông số kỹ thuật</button>
+          <button class="list-group-item list-group-item-action" onclick="loadArticle('features')">Tính năng nổi bật</button>
         </div>
       </div>
 
@@ -47,29 +47,35 @@
 
   <script>
     const articles = {
-      intro: `# Giới thiệu
-Trang wiki này được viết bằng HTML5, Bootstrap và JavaScript.
+      overview: `# Samsung Galaxy S3
+Galaxy S3 (GT-i9300) là một trong những smartphone mang tính biểu tượng của Samsung, được ra mắt vào tháng 5 năm 2012. Với thiết kế cong bo tròn, màn hình lớn và nhiều tính năng mới thời điểm đó, S3 đã nhanh chóng trở thành một trong những thiết bị Android bán chạy nhất.`,
+      
+      specs: `# Thông số kỹ thuật Galaxy S3
+- **Màn hình:** 4.8 inch Super AMOLED (1280x720 pixels)
+- **Vi xử lý:** Exynos 4412 Quad-core 1.4 GHz
+- **RAM:** 1 GB
+- **Bộ nhớ trong:** 16/32/64 GB (hỗ trợ thẻ nhớ microSD)
+- **Camera sau:** 8 MP
+- **Camera trước:** 1.9 MP
+- **Pin:** 2100 mAh (có thể tháo rời)
+- **Hệ điều hành:** Android 4.0 Ice Cream Sandwich (có thể nâng cấp)
+- **Kết nối:** Wi-Fi, Bluetooth 4.0, GPS, NFC (tùy phiên bản)`,
 
-Bạn có thể thêm nhiều mục khác bằng cách chỉnh sửa mã nguồn.`,
-
-      html: `# HTML là gì?
-HTML (HyperText Markup Language) là ngôn ngữ đánh dấu được sử dụng để tạo ra các trang web.
-
-Nó gồm các phần tử như: <h1>, <p>, <div>, <a>...`,
-
-      js: `# JavaScript cơ bản
-JavaScript là ngôn ngữ lập trình chạy trên trình duyệt, dùng để tạo tương tác động.
-
-Ví dụ:
-\`\`\`js
-alert("Xin chào!");
-\`\`\``
+      features: `# Tính năng nổi bật của Galaxy S3
+- **Smart Stay:** Màn hình giữ sáng khi người dùng nhìn vào.
+- **S Voice:** Trợ lý giọng nói tương tự Siri của Apple.
+- **Pop-up Play:** Xem video trong cửa sổ nổi khi dùng ứng dụng khác.
+- **Tối ưu phần cứng:** Chip Exynos 4 nhân mạnh mẽ, hỗ trợ đa nhiệm mượt mà.
+- **Thiết kế bo tròn tự nhiên**, thân máy mỏng, nhẹ, dễ cầm nắm.`
     };
 
     function loadArticle(key) {
       const content = articles[key] || "Không tìm thấy bài viết.";
-      document.getElementById("content").textContent = content;
+      document.getElementById("content").innerHTML = marked.parse(content);
     }
   </script>
+
+  <!-- Optional: Thư viện Markdown -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </body>
 </html>
