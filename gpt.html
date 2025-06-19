@@ -1,81 +1,91 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wiki - Galaxy S3</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <style>
-    body {
-      padding: 20px;
-    }
-    #sidebar {
-      max-height: 90vh;
-      overflow-y: auto;
-    }
-    .wiki-content {
-      white-space: pre-wrap;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Huyền Thoại Galaxy S3</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container-fluid">
-    <h1 class="text-center mb-4">📱 Wiki Galaxy S3</h1>
-    <div class="row">
-      <!-- Sidebar -->
-      <div class="col-md-3">
-        <div class="list-group" id="sidebar">
-          <button class="list-group-item list-group-item-action" onclick="loadArticle('overview')">Tổng quan</button>
-          <button class="list-group-item list-group-item-action" onclick="loadArticle('specs')">Thông số kỹ thuật</button>
-          <button class="list-group-item list-group-item-action" onclick="loadArticle('features')">Tính năng nổi bật</button>
-        </div>
-      </div>
+    <header class="action-bar">
+        <h1>Galaxy S3: Biểu Tượng Một Thời</h1>
+    </header>
 
-      <!-- Content -->
-      <div class="col-md-9">
-        <div class="card">
-          <div class="card-body wiki-content" id="content">
-            Chọn một mục bên trái để xem nội dung.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <nav class="navigation-drawer">
+        <ul>
+            <li><a href="#gioi-thieu">Giới thiệu</a></li>
+            <li><a href="#thiet-ke">Thiết kế</a></li>
+            <li><a href="#cau-hinh">Cấu hình</a></li>
+            <li><a href="#tinh-nang-noi-bat">Tính năng nổi bật</a></li>
+            <li><a href="#phan-mem">Phần mềm & Cập nhật</a></li>
+            <li><a href="#anh-huong">Ảnh hưởng & Di sản</a></li>
+        </ul>
+    </nav>
 
-  <script>
-    const articles = {
-      overview: `# Samsung Galaxy S3
-Galaxy S3 (GT-i9300) là một trong những smartphone mang tính biểu tượng của Samsung, được ra mắt vào tháng 5 năm 2012. Với thiết kế cong bo tròn, màn hình lớn và nhiều tính năng mới thời điểm đó, S3 đã nhanh chóng trở thành một trong những thiết bị Android bán chạy nhất.`,
-      
-      specs: `# Thông số kỹ thuật Galaxy S3
-- **Màn hình:** 4.8 inch Super AMOLED (1280x720 pixels)
-- **Vi xử lý:** Exynos 4412 Quad-core 1.4 GHz
-- **RAM:** 1 GB
-- **Bộ nhớ trong:** 16/32/64 GB (hỗ trợ thẻ nhớ microSD)
-- **Camera sau:** 8 MP
-- **Camera trước:** 1.9 MP
-- **Pin:** 2100 mAh (có thể tháo rời)
-- **Hệ điều hành:** Android 4.0 Ice Cream Sandwich (có thể nâng cấp)
-- **Kết nối:** Wi-Fi, Bluetooth 4.0, GPS, NFC (tùy phiên bản)`,
+    <main class="content">
+        <section id="gioi-thieu" class="wiki-section">
+            <h2>Giới thiệu chung</h2>
+            <p>Samsung Galaxy S III (S3) là một trong những smartphone Android mang tính biểu tượng nhất, ra mắt vào tháng 5 năm 2012. Nó đã định hình lại thị trường điện thoại thông minh và thiết lập kỷ lục doanh số mới cho Samsung.</p>
+            <img src="https://via.placeholder.com/600x350?text=Hình+ảnh+Galaxy+S3" alt="Samsung Galaxy S3">
+        </section>
 
-      features: `# Tính năng nổi bật của Galaxy S3
-- **Smart Stay:** Màn hình giữ sáng khi người dùng nhìn vào.
-- **S Voice:** Trợ lý giọng nói tương tự Siri của Apple.
-- **Pop-up Play:** Xem video trong cửa sổ nổi khi dùng ứng dụng khác.
-- **Tối ưu phần cứng:** Chip Exynos 4 nhân mạnh mẽ, hỗ trợ đa nhiệm mượt mà.
-- **Thiết kế bo tròn tự nhiên**, thân máy mỏng, nhẹ, dễ cầm nắm.`
-    };
+        <section id="thiet-ke" class="wiki-section">
+            <h2>Thiết kế và Màn hình</h2>
+            <p>S3 mang một ngôn ngữ thiết kế "lấy cảm hứng từ thiên nhiên", với các đường cong mềm mại và vỏ polycarbonate. Màn hình Super AMOLED HD 4.8 inch của nó là điểm nhấn chính.</p>
+            <ul>
+                <li>Thiết kế bo tròn, "Pebble Blue" và "Marble White".</li>
+                <li>Màn hình Super AMOLED HD 4.8 inch (1280 x 720 pixel).</li>
+                <li>Kính cường lực Corning Gorilla Glass 2.</li>
+            </ul>
+        </section>
 
-    function loadArticle(key) {
-      const content = articles[key] || "Không tìm thấy bài viết.";
-      document.getElementById("content").innerHTML = marked.parse(content);
-    }
-  </script>
+        <section id="cau-hinh" class="wiki-section">
+            <h2>Cấu hình mạnh mẽ</h2>
+            <p>Galaxy S3 được trang bị bộ vi xử lý mạnh mẽ vào thời điểm đó, mang lại hiệu năng mượt mà cho các tác vụ hàng ngày và chơi game.</p>
+            <ul>
+                <li>Chipset: Exynos 4 Quad (quốc tế) / Qualcomm Snapdragon S4 (Mỹ/Canada).</li>
+                <li>RAM: 1GB / 2GB.</li>
+                <li>Bộ nhớ trong: 16GB / 32GB / 64GB (hỗ trợ thẻ nhớ microSD).</li>
+                <li>Camera sau: 8MP với nhiều tính năng thông minh.</li>
+                <li>Camera trước: 1.9MP.</li>
+            </ul>
+        </section>
 
-  <!-- Optional: Thư viện Markdown -->
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <section id="tinh-nang-noi-bat" class="wiki-section">
+            <h2>Tính năng nổi bật</h2>
+            <p>S3 giới thiệu nhiều tính năng "thông minh" độc đáo, tạo nên sự khác biệt so với các đối thủ.</p>
+            <ul>
+                <li>**Smart Stay:** Giữ màn hình sáng khi bạn nhìn vào nó.</li>
+                <li>**S Voice:** Trợ lý giọng nói của Samsung.</li>
+                <li>**Pop Up Play:** Xem video trong cửa sổ nhỏ trong khi làm việc khác.</li>
+                <li>**Direct Call:** Tự động gọi khi bạn đưa điện thoại lên tai trong khi xem tin nhắn.</li>
+                <li>**Smart Alert:** Rung nhẹ để báo có thông báo khi bạn cầm điện thoại lên.</li>
+            </ul>
+        </section>
+
+        <section id="phan-mem" class="wiki-section">
+            <h2>Phần mềm và Cập nhật</h2>
+            <p>Chạy trên Android 4.0.4 Ice Cream Sandwich với giao diện TouchWiz Nature UX của Samsung.</p>
+            <ul>
+                <li>Hệ điều hành ban đầu: Android 4.0.4 Ice Cream Sandwich.</li>
+                <li>Giao diện: TouchWiz Nature UX.</li>
+                <li>Được cập nhật lên Android 4.3 Jelly Bean.</li>
+            </ul>
+        </section>
+
+        <section id="anh-huong" class="wiki-section">
+            <h2>Ảnh hưởng và Di sản</h2>
+            <p>Galaxy S3 không chỉ là một thành công về mặt thương mại mà còn để lại dấu ấn sâu sắc trong lịch sử smartphone.</p>
+            <ul>
+                <li>Điện thoại Android bán chạy nhất mọi thời đại vào thời điểm đó.</li>
+                <li>Khẳng định vị thế dẫn đầu của Samsung trên thị trường smartphone.</li>
+                <li>Đặt nền móng cho các thế hệ Galaxy S tiếp theo.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
-</html>
+  </html>
+          
