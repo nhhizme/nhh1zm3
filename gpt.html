@@ -1,103 +1,97 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thiết bị: vnpt_mytv_smartbox | nhh1zm3</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Bio - Material You</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-image: url('your_background_image.jpg'); /* Thay bằng link ảnh của bạn */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      display: flex;
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      padding: 16px;
+      max-width: 700px;
+      width: 95%;
+      align-items: center;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      background-image: url('https://via.placeholder.com/100'); /* Thay bằng logo/ảnh */
+      background-size: cover;
+      background-position: center;
+      border-radius: 12px;
+      margin-right: 16px;
+      flex-shrink: 0;
+    }
+
+    .content {
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #4A148C;
+      margin-bottom: 12px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 6px;
+      padding: 10px 20px;
+      background-color: #7B1FA2;
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      font-size: 14px;
+    }
+
+    .links a:hover {
+      background-color: #6A1B9A;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .avatar {
+        margin: 0 0 16px 0;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header class="action-bar">
-        <h1>Thiết bị: vnpt_mytv_smartbox | nhh1zm3</h1>
-    </header>
-
-    <nav class="navigation-drawer">
-        <ul>
-            <li><a href="#gioi-thieu">Giới thiệu</a></li>
-            <li><a href="#thiet-ke">Thiết kế</a></li>
-            <li><a href="#cau-hinh">Cấu hình</a></li>
-            <li><a href="#tinh-nang-noi-bat">Tính năng nổi bật</a></li>
-            <li><a href="#phan-mem">Phần mềm & Cập nhật</a></li>
-            <li><a href="#anh-huong">Ảnh hưởng & Di sản</a></li>
-        </ul>
-    </nav>
-
-    <main class="content">
-        <section id="gioi-thieu" class="wiki-section">
-            <h2>Giới thiệu chung</h2>
-            <p>VNPT SmartBox 2 (hay còn gọi là MyTV SmartBox 2) là một Android TV box được sử dụng để triển khai <del>dịch vụ IPTV</del> (nói trắng ra là OTT)</p>
-            <br>
-            <b>Thông số cấu hình:</b>
-            <table>
-                <tr>
-                    <td>Hệ điều hành: <b>Android 4.4.2 (KitKat, API 19)</b></td>
-                    <td>SoC: <b>Amlogic Meson8B</b></td>
-                    <td>Chipset: <b>Amlogic S805</b></td>
-                    <td>Bộ nhớ trong (EMMC): <b>8GB</b></td>
-                    <td>RAM: <b>1GB</b></tr>
-                    <td>Chip Wifi: <b>Realtek RTL8189ES</b></td>
-                </tr>
-            </table>
-            <img src="https://via.placeholder.com/600x350?text=Hình+ảnh+Galaxy+S3" alt="Samsung Galaxy S3">
-        </section>
-
-        <section id="thiet-ke" class="wiki-section">
-            <h2>Thiết kế và Màn hình</h2>
-            <p>S3 mang một ngôn ngữ thiết kế "lấy cảm hứng từ thiên nhiên", với các đường cong mềm mại và vỏ polycarbonate. Màn hình Super AMOLED HD 4.8 inch của nó là điểm nhấn chính.</p>
-            <ul>
-                <li>Thiết kế bo tròn, "Pebble Blue" và "Marble White".</li>
-                <li>Màn hình Super AMOLED HD 4.8 inch (1280 x 720 pixel).</li>
-                <li>Kính cường lực Corning Gorilla Glass 2.</li>
-            </ul>
-        </section>
-
-        <section id="cau-hinh" class="wiki-section">
-            <h2>Cấu hình mạnh mẽ</h2>
-            <p>Galaxy S3 được trang bị bộ vi xử lý mạnh mẽ vào thời điểm đó, mang lại hiệu năng mượt mà cho các tác vụ hàng ngày và chơi game.</p>
-            <ul>
-                <li>Chipset: Exynos 4 Quad (quốc tế) / Qualcomm Snapdragon S4 (Mỹ/Canada).</li>
-                <li>RAM: 1GB / 2GB.</li>
-                <li>Bộ nhớ trong: 16GB / 32GB / 64GB (hỗ trợ thẻ nhớ microSD).</li>
-                <li>Camera sau: 8MP với nhiều tính năng thông minh.</li>
-                <li>Camera trước: 1.9MP.</li>
-            </ul>
-        </section>
-
-        <section id="tinh-nang-noi-bat" class="wiki-section">
-            <h2>Tính năng nổi bật</h2>
-            <p>S3 giới thiệu nhiều tính năng "thông minh" độc đáo, tạo nên sự khác biệt so với các đối thủ.</p>
-            <ul>
-                <li>**Smart Stay:** Giữ màn hình sáng khi bạn nhìn vào nó.</li>
-                <li>**S Voice:** Trợ lý giọng nói của Samsung.</li>
-                <li>**Pop Up Play:** Xem video trong cửa sổ nhỏ trong khi làm việc khác.</li>
-                <li>**Direct Call:** Tự động gọi khi bạn đưa điện thoại lên tai trong khi xem tin nhắn.</li>
-                <li>**Smart Alert:** Rung nhẹ để báo có thông báo khi bạn cầm điện thoại lên.</li>
-            </ul>
-        </section>
-
-        <section id="phan-mem" class="wiki-section">
-            <h2>Phần mềm và Cập nhật</h2>
-            <p>Chạy trên Android 4.0.4 Ice Cream Sandwich với giao diện TouchWiz Nature UX của Samsung.</p>
-            <ul>
-                <li>Hệ điều hành ban đầu: Android 4.0.4 Ice Cream Sandwich.</li>
-                <li>Giao diện: TouchWiz Nature UX.</li>
-                <li>Được cập nhật lên Android 4.3 Jelly Bean.</li>
-            </ul>
-        </section>
-
-        <section id="anh-huong" class="wiki-section">
-            <h2>Ảnh hưởng và Di sản</h2>
-            <p>Galaxy S3 không chỉ là một thành công về mặt thương mại mà còn để lại dấu ấn sâu sắc trong lịch sử smartphone.</p>
-            <ul>
-                <li>Điện thoại Android bán chạy nhất mọi thời đại vào thời điểm đó.</li>
-                <li>Khẳng định vị thế dẫn đầu của Samsung trên thị trường smartphone.</li>
-                <li>Đặt nền móng cho các thế hệ Galaxy S tiếp theo.</li>
-            </ul>
-        </section>
-    </main>
-
-    <script src="script.js"></script>
+  <div class="card">
+    <div class="avatar"></div>
+    <div class="content">
+      <div class="title">Liên kết của tôi</div>
+      <div class="links">
+        <a href="#">Facebook</a>
+        <a href="#">YouTube</a>
+        <a href="#">Zalo</a>
+      </div>
+    </div>
+  </div>
 </body>
-  </html>
-          
+</html>
